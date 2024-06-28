@@ -1,0 +1,19 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name if different
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run Cypress tests
+        run: npm run cypress:run  # Replace with your actual Cypress run command
