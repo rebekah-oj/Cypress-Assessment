@@ -1,2 +1,2 @@
-Login Page Automation
-Github Actions Setup
+- Login Page Automation
+- Github Actions Setup
